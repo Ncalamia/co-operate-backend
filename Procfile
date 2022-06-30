@@ -1,1 +1,1 @@
-web: gunicorn apstone_rest_api.wsgi
+web: gunicorn capstone_rest_api.wsgi
