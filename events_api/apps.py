@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class EmployeesApiConfig(AppConfig):
+class EventsApiConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'employees_api'
+    name = 'events_api'

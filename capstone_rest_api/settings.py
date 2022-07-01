@@ -42,7 +42,8 @@ ALLOWED_HOSTS = ['localhost', 'co-operate-backend.herokuapp.com']
 INSTALLED_APPS = [
     'corsheaders', 
     'rest_framework',
-    'employees_api',
+    'employeeitem_api',
+    'events_api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -93,7 +94,7 @@ WSGI_APPLICATION = 'capstone_rest_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'employee_api',
+        'NAME': 'cooperate_api',
         'USER': '',
         'PASSWORD': '',
         'HOST': 'localhost'
