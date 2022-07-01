@@ -6,7 +6,7 @@ from events_api.models import Event
 class EmployeeItem(models.Model):
     name = models.CharField(max_length=100)
     item = models.CharField(max_length=50)
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, default=None)
+    party = models.ForeignKey(Event, on_delete=models.CASCADE, default=None)
     
     def __str__(self):
         return self.item
