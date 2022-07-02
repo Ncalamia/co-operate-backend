@@ -41,7 +41,7 @@ def check_login(request):
             user = UserAccount.objects.get(username=username)  #find user object with matching username
             if check_password(password, user.password): #check if passwords match
                 return JsonResponse({'id': user.id, 'username': user.username}) #if passwords match, return a user dict
-            else: #passwords don't match so return {'none'}
-                return JsonResponse({'none'})
+            else: #passwords don't match so return {'n'}
+                return JsonResponse({'n'})
         else: #if username doesn't exist in db, return empty dict
             return JsonResponse({})
